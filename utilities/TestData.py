@@ -1,3 +1,3 @@
 class TestData:
 
-    url = "https://www.amazon.com"
+    url = "https://www.amazon.com/"

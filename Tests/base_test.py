@@ -3,5 +3,5 @@ import pytest
 
 @pytest.mark.usefixtures("initialise_driver")
 class BaseTest:
-    pass
-
+    def get_driver(self):
+        return self.driver
