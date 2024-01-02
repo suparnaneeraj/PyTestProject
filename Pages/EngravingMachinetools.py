@@ -14,7 +14,10 @@ class EngravingMachinesToolsPage(BasePage):
         self.click(EngravingMachineToolsLocators.select_third_product)
 
     def get_product_rating(self):
-        return self.get_text(EngravingMachineToolsLocators.product_rating)
+        if self.verify_if_element_present(EngravingMachineToolsLocators.product_rating):
+            return self.get_text(EngravingMachineToolsLocators.product_rating)
+        else:
+            return "0"
 
     def get_product_price(self):
         return self.get_inner_text(EngravingMachineToolsLocators.product_price)

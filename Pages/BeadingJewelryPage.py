@@ -13,4 +13,4 @@ class BeadingJewelryPage(BasePage):
 
     def click_engraving_machine_tools(self):
         self.click(BeadingJewelryMakingLocators.engraving_machine_tools_menu)
-        return EngravingMachinesToolsPage()
+        return EngravingMachinesToolsPage(self.driver)
